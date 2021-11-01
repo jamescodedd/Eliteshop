@@ -4,12 +4,12 @@ var { width } = Dimensions.get("window");
 const Header=()=>{
     return (
     <TouchableOpacity>
-       <View style={styles.header}>
+       <SafeAreaView style={styles.header}>
            < Image style={{ width:width/6, height:width/6}} source={require("../assets/lo.png")}/>
            <Text style={styles.headname}>Elite Shop</Text>
 
 
-       </View></TouchableOpacity>
+       </SafeAreaView></TouchableOpacity>
     )
 }
 
@@ -26,12 +26,12 @@ header:{
     backgroundColor:"white",
     alignItems:"center",
   
-   
-    padding:10,
+   borderBottomWidth:5,
+   borderLeftWidth:1,
+   borderRightWidth:1,
 
-   borderBottomWidth:10,
-
-    borderRadius:40
+    borderRadius:40,
+    borderBottomLeftRadius:100
 }
 
 })

@@ -1,26 +1,39 @@
 import React, { useState, useEffect } from 'react';
 
-// import all the components we are going to use
-import { SafeAreaView, Text, StyleSheet, View, FlatList,Dimensions,Image} from 'react-native';
-import { SearchBar } from 'react-native-elements';
-import { get } from 'styled-system';
+// import 
+import { SafeAreaView, Text, StyleSheet, View, FlatList,Dimensions,Image, Button} from 'react-native';
+import { SearchBar,Card,ListItem, Avatar } from 'react-native-elements';
+import {AntDesign} from "@expo/vector-icons"
 var { width } = Dimensions.get("window");
 const Data=require('../assets/Data.json');
+import Productlist from '../PRODUCTS/Productlist';
+import Searchdesignlist from "./Searchdesignlist"
+
+
 const Search = () => {
   const [search, setSearch] = useState('');
   const [filteredData, setfilter] = useState([]);
   const [sources, datasource] = useState([]);
 
+
+  
+
   useEffect(() => {
+
+
 
     
     
- 
+
         setfilter(Data);
         datasource(Data);
+        
+       
      
         return ()=>{
-            assign([]);
+            setfilter([]);
+      
+
         }
       
           },
@@ -43,26 +56,37 @@ const Search = () => {
       });
       setfilter(newData);
       setSearch(text);
-    } else {
+    }
+   
+    else {
     
       // Update filteredData with sources
       setfilter(sources);
       setSearch(text);
     }
   };
-
-  const ItemView = ({ item }) => {
-    return (
-      // Flat List Item
-     
-           <Text style={styles.itemStyle} onPress={() => getItem(item)}>
-        {item.id}
-        {'.'}
-        {item.name.toUpperCase()}
-      </Text>
-     
-    );
+  const openList = () => {
+    datasource(true);
   };
+
+  const onBlur = () => {
+    datasource(false);
+  };
+
+  const ItemView = () => {
+    return (
+        <FlatList
+         
+            numColumns={2}
+                 data={filteredData}
+                 renderItem={({item})=>< Searchdesignlist key={item.id}
+                item={item}/>}
+                 keyExtractor={item=>item.name}/>
+    )
+  
+        
+  };
+ 
 
   const ItemSeparatorView = () => {
     return (
@@ -82,6 +106,7 @@ const Search = () => {
     alert('Id : ' + item.id + ' name : ' + item.name);
   };
 
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
@@ -92,29 +117,30 @@ const Search = () => {
     onClear={(text) => searchFilterFunction('')}
     placeholder="Type Here..."
     value={search}
-    containerStyle={{ width:width, marginTop:30, backgroundColor: 'white', borderRadius: 1 }}
-    inputContainerStyle={{backgroundColor:"white"}}
+   
+  
+    containerStyle={{ width:width-20,  backgroundColor: 'gainboron', borderRadius: 1 }}
+    inputContainerStyle={{backgroundColor:"white" ,borderBottomColor:"white"}}
+   />
+      <View style={styles.products}>
+              <FlatList
+        data={search}
+       
+        ItemSeparatorComponent={ItemSeparatorView}
+        renderItem={
+          ItemView
+      }  
+      />
+    
+        </View>
+      
+    
     
   
-   // onChangeText={(text)=> }
-        
 
-    
-    
-   />
-        <FlatList
-          data={filteredData}
-          keyExtractor={(item, index) => index.toString()}
-          ItemSeparatorComponent={ItemSeparatorView}
-          renderItem={
-            ItemView
+           </View>
         
-        }
-      
-           
-        
-        />
-      </View>
+   
     </SafeAreaView>
   );
 };
@@ -122,9 +148,10 @@ const Search = () => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
+    marginBottom:80
   },
   itemStyle: {
-    padding: 10,
+    padding: 10
   },
 });
 
