@@ -17,9 +17,9 @@ const Categories = (props) => {
         >
             <ListItem style={{alignContent:"center", margin: 0, padding: 0, borderRadius: 0 }}>
                 <TouchableOpacity
-                    key={1}
+                    key={0}
                     onPress={() => {
-                        props.Categories('all'), props.setact(-1)
+                        props.Categories('Beauty'), props.setact(-1)
                     }}
                 ><NativeBaseProvider><Badge
                 style={[styles.center, {margin: 5},

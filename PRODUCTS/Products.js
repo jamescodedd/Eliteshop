@@ -50,11 +50,11 @@ const Product = () => {
   //categories filter
   const changecat = (cat) => {
     {
-      cat == "all"
+      cat === "Beauty"
         ? [getproduct(intial), setact(true)]
         : [
             getproduct(
-              products.filter((i) => i.category_id === cat),
+              products.filter((i) => i.category._id === cat),
               setact(true)
             ),
           ];
@@ -70,21 +70,21 @@ const Product = () => {
      <View>
       
        <View>
-     
+       <Categories
+   cat={cat}
+   Categories={changecat}
+   productt={productt}
+   active={active}
+   setact={setact} />
        </View>
        {productt.length > 0 ? (
        <View style={styles.flatlist}>
                <Banner/>
           
           <Search/>
-             <Categories
-   cat={cat}
-   Categories={changecat}
-   productt={productt}
-   active={active}
-   setact={setact}
+    
 
- />
+
          
            <View style={{flexDirection:"row", flexWrap:"wrap", backgroundColor:"gainsboro"}}>
            {productt.map((item) => {
