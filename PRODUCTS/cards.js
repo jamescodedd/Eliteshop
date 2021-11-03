@@ -39,7 +39,7 @@ const Cards=(props)=>{
 
 const styles = StyleSheet.create({
     container: {
-        width: width / 2 - 20,
+        width: width / 2 - 30,
         height: width / 1.7,
         padding: 10,
         borderRadius: 10,
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         
     },
     image: {
-        width: width / 2 - 20 - 10,
+        width: width / 2 - 20 - 40,
         height: width / 2 - 20 - 30,
         backgroundColor: 'transparent',
         position: 'absolute',

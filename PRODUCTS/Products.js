@@ -12,20 +12,24 @@ import {
   Dimensions,
   LogBox,
 } from "react-native";
-import Productlist from "./Productlist";
-import { SearchBar } from "react-native-elements";
-import Search from "../SCREENS/Search";
+
+
+
+
+
 import Categories from "../SCREENS/catergories";
 import Banner from "../SCREENS/Banner"
+import Search from "../SCREENS/Search";
 
 var { width } = Dimensions.get("window");
 const Data = require("../assets/Data.json");
 import CatData from "../assets/094 categories.json";
+import Productlist from "./productlist"
 
 
 LogBox.ignoreAllLogs(true);
 
-const Product = () => {
+const Product = (props) => {
   const [products, assign] = useState([]);
   const [cat, sets] = useState([]);
   const [active, setact] = useState();
@@ -50,7 +54,7 @@ const Product = () => {
   //categories filter
   const changecat = (cat) => {
     {
-      cat === "Beauty"
+      cat === "ALL"
         ? [getproduct(intial), setact(true)]
         : [
             getproduct(
@@ -68,8 +72,11 @@ const Product = () => {
       </View>
       <ScrollView>
      <View>
-      
+     <Search
+      navigation={props.navigation} />
        <View>
+  
+       
        <Categories
    cat={cat}
    Categories={changecat}
@@ -77,11 +84,15 @@ const Product = () => {
    active={active}
    setact={setact} />
        </View>
+      
        {productt.length > 0 ? (
        <View style={styles.flatlist}>
+        
+
+
                <Banner/>
           
-          <Search/>
+      
     
 
 
@@ -90,6 +101,7 @@ const Product = () => {
            {productt.map((item) => {
                return(
                    <Productlist
+                   navigation={props.navigation}
                       
                        key={item._id}
                        item={item}

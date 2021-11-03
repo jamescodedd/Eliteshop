@@ -19,7 +19,7 @@ const Categories = (props) => {
                 <TouchableOpacity
                     key={0}
                     onPress={() => {
-                        props.Categories('Beauty'), props.setact(-1)
+                        props.Categories('ALL'), props.setact(-1)
                     }}
                 ><NativeBaseProvider><Badge
                 style={[styles.center, {margin: 5},

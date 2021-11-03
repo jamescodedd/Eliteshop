@@ -39,7 +39,7 @@ useEffect(()=>{
       <View style={styles.container}>
         <View style={styles.swiper}>
           <Swiper
-            style={{ height: width / 2 }}
+            style={{ height: width / 2.5 }}
             showButtons={false}
             autoplay={true}
             autoplayTimeout={2}
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   imageBanner: {
-    height: width / 2,
+    height: width / 2.5,
     width: width - 40,
     borderRadius: 10,
     marginHorizontal: 20,

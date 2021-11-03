@@ -5,11 +5,11 @@ var {width}=Dimensions.get('window');
 const Searchdesignlist=(props)=>{
 const {item}=props;
     return (
-        <TouchableOpacity style={{width:'50%'}} >
-            <View style={{width:width/2}}>
+       
+            <View style={{width:width/1.2}}>
             <SearchDesign {...item}/>
         </View>
-        </TouchableOpacity>
+    
     )
 } 
 

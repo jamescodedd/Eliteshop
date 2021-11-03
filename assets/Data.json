@@ -14,8 +14,11 @@
   "rating": 1,
   "numReviews": 0,
   "isFeatured": true,
+  "discount":15,
   "name": "Red Tape Men's Rte309 Sneakers",
-  "description": "Red Tape Men's Rte309 Sneakers",
+  "description": "Our mens basketball shoes are made to offer just the right balance of support,comfort and to boost your performance on the court and win basketball games making it ideal for professional athletes and beginners.Superior cowhide leather upper provide a beautiful finish that only gets better with age,Rubber & EVA Sole Design can make your feet comfortable for all day",
+
+
   "category": {
     "$oid": "5fd15d5cdcb4a6642bddc0fe9"
   },
@@ -33,6 +36,7 @@
   "rating": 5,
   "numReviews": 0,
   "isFeatured": true,
+  "discount":5,
   "name": "Chelsea Slip-on Suede Boots For Men",
   "description": "beautiful chair for garden",
   "category": {
@@ -51,6 +55,7 @@
   "price": 1350.9,
   "rating": 5,
   "numReviews": 0,
+  "discount":20,
   "isFeatured": true,
   "name": "Bekina PAN3P Steplite EasyGrip S4",
   "description": "Bekina PAN3P Steplite EasyGrip S4",
@@ -71,6 +76,7 @@
   "rating": 5,
   "numReviews": 0,
   "isFeatured": true,
+  "discount":10,
   "name": "KPP Mens Walking Tennis Shoes",
   "description": "KPP Mens Walking Tennis Shoes - Comfortable Running Sneakers Breathable Men Workout Lightweight Slip On Shoes for Athletic Gym Casual Travel",
   "category": {
@@ -90,6 +96,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":25,
   "name": "TECLAST 15.6 Traditional Laptop",
   "description": "TECLAST 15.6 Traditional Laptop Computers, 6GB+128GB SSD Thin Bezel Laptop Computer, Quad Core Intel J3455 1920x1080 FHD Windows 10 Laptop",
   "category": {
@@ -112,6 +119,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":8,
   "name": "Lenovo IdeaPad 3 11 Chromebook",
   "description": "Lenovo IdeaPad 3 11 Chromebook 11.6' Laptop, 11.6' HD (1366 x 768) Display, Intel Celeron N4020 Processor, 4GB LPDDR4 RAM, 64GB eMMC Storage",
   "category": {
@@ -132,6 +140,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":11,
   "name": "Acer Aspire 5 A515 Slim Laptop",
   "description": "Acer Aspire 5 A515-46-R14K Slim Laptop | 15.6' Full HD IPS | AMD Ryzen 3 3350U Quad-Core Mobile Processor | 4GB DDR4 | 128GB NVMe SSD | WiFi 6 ",
   "category": {
@@ -151,6 +160,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":5,
   "name": "Apple iPhone XR, US Version",
   "description": "Apple iPhone XR, US Version, 64GB, Red - Unlocked (Renewed)",
   "category": {
@@ -171,6 +181,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":9,
   "name": " Apple iPhone 12, 64GB, Blue",
   "description": "Big Sofa for living room",
   "category": {
@@ -192,6 +203,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":15,
   "name": "Essentials Women's Plus Size Short-Sleeve",
   "description": "Eliteshop Essentials Women's Plus Size Short-Sleeve",
   "category": {
@@ -212,6 +224,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":19,
   "name": "MY'S Men's 3 Piece Slim Fit Suit Set",
   "description": "MY'S Mens 3-Piece Suit Shawl Lapel One Button Tuxedo Winter Fabric Slim Fit Premium Dinner Jacket Vest Pants & Tie Set",
   "category": {
@@ -232,6 +245,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":7,
   "name": "Mens 3-Piece Plaid Suit",
   "description": "Mens 3-Piece Plaid Suit Set Modern Fit Jacket Tux Blazer Vest Pants Light Green",
   "category": {
@@ -252,6 +266,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":2,
   "name": "Men's Design Stretch Jeans (black)",
   "description": "Big Sofa for living room",
   "category": {
@@ -272,6 +287,7 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":11,
   "name": "YMDUCH Women's SexyDress",
   "description": "YMDUCH Women's Sexy Bodycon Party Dresses Spaghetti Strap Ruched Mini Club Dress",
   "category": {
@@ -286,13 +302,14 @@
   },
   "image": "https://m.media-amazon.com/images/I/711vVsuLVzL._AC_UX522_.jpg",
   "color":"https://m.media-amazon.com/images/I/71gI0HfNKjL._AC_UX425_.jpg",
-  "brand": "Mobilix",
-  "price": 1000,
-  "rating": 5,
+  "brand": "Fuvinx",
+  "price": 40,
+  "rating": 3,
   "numReviews": null,
   "isFeatured": true,
+  "discount":40,
   "name": "FeelinGirl Waist Trainer for Women ",
-  "description": "Big Sofa for living room",
+  "description": "ONE SIZE FITS ALL: Our waist trainer wrap has only one size, and the one size fit all body types, this bandage wrap is 13.1 ft long and 4.9inch wide, it will snatch your waist freely, and you can adjust the tightness as you want.SEGMENTED VELCRO: Our waist bandage wrap designed with segmented Velcro, it is more flexible and adjustable than others, wide bandage can cover your stomach and slim your waist easily.",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
@@ -302,40 +319,42 @@
 ,
 {
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15da13e520d4442y1ed8e9e"
   },
   "image": "https://images-na.ssl-images-amazon.com/images/I/91nZ5TE9whL.__AC_SY445_SX342_QL70_FMwebp_.jpg",
   "color":"https://m.media-amazon.com/images/I/91sj7LGZifL._AC_UX466_.jpg",
   "alt":"https://m.media-amazon.com/images/I/61oVp97WDhL._AC_UX466_.jpg",
   "brand": "Mobilix",
   "price": 80,
-  "rating": 5,
+  "rating": 4,
   "numReviews": null,
   "isFeatured": true,
+  "discount":8,
   "name": "Essentials Men's Regular-fit Quick-Dry Golf Polo Shirt",
   "description": "Essentials Men's Regular-fit Quick-Dry Golf Polo Shirt",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 28,
   "__v": 0
 }
 ,{
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15da13e520d444421ed8e9e"
   },
   "image": "https://m.media-amazon.com/images/I/81meS+hzUIL._AC_UY500_.jpg",
   "color":"https://m.media-amazon.com/images/I/81aHhNSuJHL._AC_SY500._SX._UX._SY._UY_.jpg",
 
 
-  "brand": "Mobilix",
-  "price": 1000,
+  "brand": "Fuvin",
+  "price": 200,
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
-  "name": "Amazon Essentials Women's Jean",
+  "discount":15,
+  "name": "Essentials Women's Jean",
 
-  "description": "Amazon Essentials Women's Mid Rise Curvy Skinny Jean",
+  "description": "Essentials Women's Mid Rise Curvy Skinny Jean",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
@@ -344,7 +363,7 @@
 }
 ,{
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15da13e520d444222ed8e9e"
   },
   "image": "https://m.media-amazon.com/images/I/71IRHLTOnlL._AC_UX385_.jpg",
   "color":"https://m.media-amazon.com/images/I/51e9qKFXPSL._AC_UX522_.jpg",
@@ -353,12 +372,13 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":5,
   "name": "Wrangler Men's Long Sleeve Sport Western Snap Shirt",
   "description": "Wrangler Men's Long Sleeve Sport Western Snap Shirt",
   "category": {
-    "$oid": "5f15d5b2cb4a6642bddc0fe7"
+    "$oid": "5f15d5b2cb4a6642bddc0ee7"
   },
-  "countInStock": 2,
+  "countInStock": 12,
   "__v": 0
 }
 ,{
@@ -368,16 +388,17 @@
   "image": "https://m.media-amazon.com/images/I/91vNaFnBJES._AC_UX522_.jpg",
   "color":"https://m.media-amazon.com/images/I/71khQ+XhhqS._AC_UX522_.jpg",
   "brand": "Mobilix",
-  "price": 1000,
+  "price": 60,
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":10,
   "name": "Men's Hawaiian Shirt Short Sleeves",
   "description": "Men's Hawaiian Shirt Short Sleeves Printed Button Down Summer Beach Dress Shirts",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 80,
   "__v": 0
 }
 ,{
@@ -387,27 +408,29 @@
   "image": "https://m.media-amazon.com/images/I/A1z+LEOFyYL._AC_SX342_SY445_.jpg",
   "color":"https://m.media-amazon.com/images/I/91SnYjkm0GL._AC_UY500_.jpg",
   "brand": "Mobilix",
-  "price": 1000,
+  "price": 80,
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "discount":13,
   "name": "Men's Slim-Fit Long-Sleeve Plaid Shirt",
   "description": "Goodthreads Men's Slim-Fit Long-Sleeve Plaid Oxford Shirt",
   "category": {
-    "$oid": "5f15d5b2cb4a6642bddc0fe7"
+    "$oid": "5f15d5b2cb4a6642bdc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 17,
   "__v": 0
 }
 ,{
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15da13e5204d44421ed8e9e"
   },
   "image": "https://m.media-amazon.com/images/I/61vLxAph0yL._AC_UX466_.jpg",
   "color":"https://m.media-amazon.com/images/I/21Pdh0ycWBL._AC._SX._UX._SY._UY_.jpg",
   "brand": "Mobilix",
-  "price": 1000,
+  "price": 100,
   "rating": 5,
+  "discount":24,
   "numReviews": null,
   "isFeatured": true,
   "name": "Gildan Men's G2000 Ultra Cotton Adult T-Shirt",
@@ -415,18 +438,19 @@
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 10,
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15dae13e520d44421ed8e9e"
   },
   "image": "https://m.media-amazon.com/images/I/41R9bPX7+sL._SX395_SY395_.jpg",
   "color":"https://m.media-amazon.com/images/I/81M0v9K-aQL._UL1500_.jpg",
   "brand": "Mobilix",
-  "price": 1000,
+  "price": 300,
   "rating": 5,
+  "discount":13,
   "numReviews": null,
   "isFeatured": true,
   "name": "Adidas Men's Hoops 2.0 Mid Basketball Shoe",
@@ -434,7 +458,7 @@
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 27,
   "__v": 0
 }
 

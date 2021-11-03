@@ -6,11 +6,13 @@ import { SearchBar,Card,ListItem, Avatar } from 'react-native-elements';
 import {AntDesign} from "@expo/vector-icons"
 var { width } = Dimensions.get("window");
 const Data=require('../assets/Data.json');
-import Productlist from '../PRODUCTS/Productlist';
 import Searchdesignlist from "./Searchdesignlist"
+import Productlist from "../PRODUCTS/productlist"
 
 
-const Search = () => {
+
+const Search = (props) => {
+ 
   const [search, setSearch] = useState('');
   const [filteredData, setfilter] = useState([]);
   const [sources, datasource] = useState([]);
@@ -74,15 +76,30 @@ const Search = () => {
   };
 
   const ItemView = () => {
-    return (
-        <FlatList
+    return (<View>
+      {
+      filteredData.map((item) => {
+        return(
+          <ListItem
+          onPress={()=>{
+            props.navigation.navigate("Product Details", {item: item})
+        }}>
+            <Searchdesignlist
          
-            numColumns={2}
-                 data={filteredData}
-                 renderItem={({item})=>< Searchdesignlist key={item.id}
-                item={item}/>}
-                 keyExtractor={item=>item.name}/>
+       
+      
+           
+               
+                key={item._id}
+                item={item}
+           
+            />
+                 </ListItem>
+        )
+    })}
+    </View>
     )
+      
   
         
   };
@@ -110,29 +127,42 @@ const Search = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
-      <SearchBar
-    round
+        <View style={{marginLeft:23,backgroundColor:"transparent"}}>
+        <SearchBar
+      round
+    
+  
     searchIcon={{ size: 24 }}
     onChangeText={(text) => searchFilterFunction(text)}
-    onClear={(text) => searchFilterFunction('')}
-    placeholder="Type Here..."
+    onClear={(text) => searchFilterFunction("")}
+    placeholder="Search Products..."
     value={search}
+    placeholderTextColor={"ghostwhite"}
+    inputStyle={{color:"antiquewhite"}}
+    
    
   
-    containerStyle={{ width:width-20,  backgroundColor: 'gainboron', borderRadius: 1 }}
-    inputContainerStyle={{backgroundColor:"white" ,borderBottomColor:"white"}}
+    containerStyle={{ width:width-40, backgroundColor:"transparent",borderTopColor: 'transparent', borderBottomColor:"transparent"}}
+    inputContainerStyle={{backgroundColor:"darkslategrey"}}
    />
-      <View style={styles.products}>
+        </View>
+    
+     
+      <View>
               <FlatList
         data={search}
        
         ItemSeparatorComponent={ItemSeparatorView}
         renderItem={
-          ItemView
-      }  
+          ItemView         
+
+      } 
+      
       />
+     
     
         </View>
+    
       
     
     
@@ -142,13 +172,14 @@ const Search = () => {
         
    
     </SafeAreaView>
+    
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
-    marginBottom:80
+    backgroundColor: 'white'
+
   },
   itemStyle: {
     padding: 10
