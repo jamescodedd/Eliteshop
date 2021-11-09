@@ -3,6 +3,10 @@ import { StyleSheet, Text, View,TouchableOpacity, ActivityIndicator, ScrollView,
 import { useState } from 'react'
 import {} from "react-native-elements"
 import { NavigationContainer } from '@react-navigation/native'
+import {Provider} from "react-redux"
+import store from "./Redux/store";
+
+
 
 import Products from  "./PRODUCTS/Products"
 import Header from './SCREENS/Header';
@@ -15,35 +19,18 @@ import Navpage from './SCREENS/Navpage'
 
 
 
-
 export default function App() {
     return (
-        <NavigationContainer>
-            
-         
-           
-               
-     
-            
-                 
-        
-                        <Navpage/>
-                    
-                   
-           
-          
+    <Provider store={store}>
+         <NavigationContainer>
+            <Navpage/>
 
-            
-  
-        </NavigationContainer>
-       
-  
-      
-              
-                  
-  
-   
-  
+</NavigationContainer>
+
+        
+    </Provider>
+           
+ 
        
     )
 }

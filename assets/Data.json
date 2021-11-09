@@ -3,16 +3,18 @@
 
 
   "_id": {
-    "$oid": "5f15d8852a025143f9593a7c"
+    "$oid": "5f15d8852a025143f95593a7c"
   },
   "image":"https://m.media-amazon.com/images/I/71r7M2SlTeL._UY625_.jpg",
   "alt":"https://m.media-amazon.com/images/I/41o67+QBLeL._SY395_SX395_.jpg",
   "color":"https://m.media-amazon.com/images/I/614R90XWePL._SY625._SX._UX._SY._UY_.jpg",
 
-  "brand": "PS3",
-  "price": 100,
-  "rating": 1,
-  "numReviews": 0,
+  "brand": "Red Tap",
+  "price": 200,
+  "rating": 4,
+  "l":250,
+  "delivery":"free delivery",
+
   "isFeatured": true,
   "discount":15,
   "name": "Red Tape Men's Rte309 Sneakers",
@@ -26,19 +28,20 @@
   "__v": 0
 },{
   "_id": {
-    "$oid": "5f15d92ee520d44421ed8e9b"
+    "$oid": "5f15d92ee5240d44421ed8e9b"
   },
  "image":"https://m.media-amazon.com/images/I/619C4QfIuRL._AC_UY500_.jpg",
  "color":"https://m.media-amazon.com/images/I/71jS677E4fL._AC_SY500._SX._UX._SY._UY_.jpg",
  "alt":"https://m.media-amazon.com/images/I/61xNk8abKUL._AC_UY500_.jpg",
-  "brand": "IKEA",
-  "price": 350.9,
+  "brand": "Urban Fashon",
+  "price": 359,
   "rating": 5,
-  "numReviews": 0,
+  "l":400,
+
   "isFeatured": true,
   "discount":5,
   "name": "Chelsea Slip-on Suede Boots For Men",
-  "description": "beautiful chair for garden",
+  "description": "Chelsea Slip-on Suede Boots For Men - Cestfini Genuine Leather Chukka Boots, Waterproof Casual Oxford Dress Ankle Bootie",
   "category": {
     "$oid": "5f15d5b7cb4a6642bddc0fe8"
   },
@@ -51,14 +54,15 @@
   "image":"https://m.media-amazon.com/images/I/71SVnF1SDLL._AC_UY500_.jpg" ,
   "alt":"https://m.media-amazon.com/images/I/61AIBuGJyOS._AC_UY500_.jpg",
   "color":"https://m.media-amazon.com/images/I/71nkmgB7UNS._AC_SY500._SX._UX._SY._UY_.jpg",
-  "brand": "OBI",
-  "price": 1350.9,
+  "brand": "ASEDA BRAND",
+  "price": 559,
   "rating": 5,
   "numReviews": 0,
   "discount":20,
+  "l":600,
   "isFeatured": true,
   "name": "Bekina PAN3P Steplite EasyGrip S4",
-  "description": "Bekina PAN3P Steplite EasyGrip S4",
+  "description": "Steplite EasyGrip (Agrilite) has become synonymous with comfort and durability. These hard-wearing NEOTANE boots with their elegant fit are feather-light, feel supple and give your feet energy throughout the day. Made with Bekina's own Polyurethane technology known as NEOTANE, these boots are resistant to oils, fats, manure and various cleaning products.",
   "category": {
     "$oid": "5f15d5b7cb4a6642bddc0fe8"
   },
@@ -71,14 +75,16 @@
   "image": "https://m.media-amazon.com/images/I/61E+mjyo5bL._AC_UY500_.jpg",
   "alt":"https://m.media-amazon.com/images/I/71uLzEZMtZL._AC_UY500_.jpg",
   "color":"https://m.media-amazon.com/images/I/81+X0H0w66L._AC_SY395_SX395_.jpg",
-  "brand": "OBI",
-  "price": 490.9,
-  "rating": 5,
-  "numReviews": 0,
+  "brand": "KPP SNEAKERS",
+  "price": 199,
+  "delivery":"5%off delivery",
+  "rating": 3,
+  "l":200,
+ 
   "isFeatured": true,
   "discount":10,
   "name": "KPP Mens Walking Tennis Shoes",
-  "description": "KPP Mens Walking Tennis Shoes - Comfortable Running Sneakers Breathable Men Workout Lightweight Slip On Shoes for Athletic Gym Casual Travel",
+  "description": "Mens Slip On Shoes - Running sneakers are designed for more effective shoes-wearing experience, you will no longer need to lace up your shoes, and the elastic topline at the back of the shoes will make it more convenient to wear your shoes. Simple style, all-match colors, can be match any clothing",
   "category": {
     "$oid": "5f15d5b7cb4a6642bddc0fe8"
   },
@@ -91,9 +97,10 @@
   "image": "https://m.media-amazon.com/images/I/81hIXkUh45S._AC_SL1500_.jpg",
   "color":"https://m.media-amazon.com/images/I/71PUp2QPl2L._AC_SL1200_.jpg",
   "alt":"https://m.media-amazon.com/images/I/61+PG1s89cL._AC_SL1200_.jpg",
-  "brand": "Mobilix",
+  "brand": "TECLAST",
   "price": 1000,
   "rating": 5,
+  "l":1250,
   "numReviews": null,
   "isFeatured": true,
   "discount":25,
@@ -114,12 +121,13 @@
   "color":"https://m.media-amazon.com/images/I/71DX4ZntNML._AC_SL1500_.jpg",
   "alt":"https://m.media-amazon.com/images/I/61oVp97WDhL._AC_UX466_.jpg",
 
-  "brand": "Mobilix",
-  "price": 1000,
+  "brand": "Lenovo IdeaPad",
+  "price": 4000,
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
   "discount":8,
+  "l":4800,
   "name": "Lenovo IdeaPad 3 11 Chromebook",
   "description": "Lenovo IdeaPad 3 11 Chromebook 11.6' Laptop, 11.6' HD (1366 x 768) Display, Intel Celeron N4020 Processor, 4GB LPDDR4 RAM, 64GB eMMC Storage",
   "category": {
@@ -135,8 +143,9 @@
   "image": "https://m.media-amazon.com/images/I/71+2H96GHZL._AC_SX300_SY300_.jpg",
   "alt":"https://m.media-amazon.com/images/I/714+yuXQFmS._AC_SL1500_.jpg",
   "color":"https://m.media-amazon.com/images/I/71k95iZEk5S._AC_SL1500_.jpg",
-  "brand": "Mobilix",
-  "price": 1000,
+  "brand": "Acer",
+  "price": 3000,
+  "l":3500,
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
@@ -155,8 +164,9 @@
   },
   "image": "https://images-na.ssl-images-amazon.com/images/I/41ZjUOH6nRL.__AC_SY300_SX300_QL70_FMwebp_.jpg",
   "color":"https://m.media-amazon.com/images/I/51QG+K5RQtL._AC_SY300_SX300_.jpg",
-  "brand": "Mobilix",
-  "price": 1000,
+  "brand": "Apple",
+  "price": 3000,
+  "l":3500,
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
@@ -166,46 +176,48 @@
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 27,
   "__v": 0
 }
 ,{
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15da13e520d443421ed8e9e"
   },
   "image": "https://m.media-amazon.com/images/I/71Rr2Jm7xCL._AC_SL1500_.jpg",
   "alt":"https://images-na.ssl-images-amazon.com/images/I/71IG9gjBhxL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
   "color":"https://images-na.ssl-images-amazon.com/images/I/71qZh0BBBmL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-  "brand": "Mobilix",
-  "price": 1000,
+  "brand":"Apple",
+  "price": 7000,
   "rating": 5,
+  "l":8400,
   "numReviews": null,
   "isFeatured": true,
   "discount":9,
   "name": " Apple iPhone 12, 64GB, Blue",
-  "description": "Big Sofa for living room",
+  "description": "Fully unlocked and compatible with any carrier of choice (e.g. AT&T, T-Mobile, Sprint, Verizon, US-Cellular, Cricket, Metro, etc.).The device does not come with headphones or a SIM card. It does include a charger and charging cable that may be generic.Inspected and guaranteed to have minimal cosmetic damage, which is not noticeable when the device is held at arm's length.",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 23,
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15d4a13e520d44421ed8e9e"
   },
   "image": "https://m.media-amazon.com/images/I/81Mtr7IL2EL._AC_UY500_.jpg",
   "alt":"https://m.media-amazon.com/images/I/81rl19UIKBL._AC_UY500_.jpg",
   "color":"https://m.media-amazon.com/images/I/91-aC0J0suL._AC_UY500_.jpg",
 
-  "brand": "Mobilix",
-  "price": 1000,
-  "rating": 5,
-  "numReviews": null,
+  "brand": "The  Essentials",
+  "price": 77,
+  "rating": 4,
+
+  "l":90,
   "isFeatured": true,
   "discount":15,
   "name": "Essentials Women's Plus Size Short-Sleeve",
-  "description": "Eliteshop Essentials Women's Plus Size Short-Sleeve",
+  "description": " Essentials is focused on creating affordable, high-quality, and long-lasting everyday clothing you can rely on. Our line of women's apparel includes cashmere sweaters, fleece and down jackets, and more, including plus-size options. Our consistent sizing takes the guesswork out of shopping, and each piece is put to the test to maintain the highest standards in quality and comfort.",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
@@ -219,11 +231,13 @@
   "image": "https://m.media-amazon.com/images/I/613dVDyGG5L._AC_UY500_.jpg",
   "alt":"https://m.media-amazon.com/images/I/51Q5TcMBJeL._AC_UX522_.jpg",
   "color":"https://m.media-amazon.com/images/I/61nNZNs1kvL._AC_UX522_.jpg",
-  "brand": "Mobilix",
-  "price": 1000,
+  "brand": "Tuxedo",
+  "price": 250,
   "rating": 5,
   "numReviews": null,
+  "delivery":"Elite delivery",
   "isFeatured": true,
+  "l":300,
   "discount":19,
   "name": "MY'S Men's 3 Piece Slim Fit Suit Set",
   "description": "MY'S Mens 3-Piece Suit Shawl Lapel One Button Tuxedo Winter Fabric Slim Fit Premium Dinner Jacket Vest Pants & Tie Set",
@@ -235,76 +249,79 @@
 },
 {
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f1e5da13e520d44421ed8e9e"
   },
   "image": "https://m.media-amazon.com/images/I/818VuDnUevL._AC_UX522_.jpg",
   "alt":"https://m.media-amazon.com/images/I/71mPYuCSirL._AC_UX522_.jpg",
   "color":"https://m.media-amazon.com/images/I/61fTsPeY08L._AC_SX522._SX._UX._SY._UY_.jpg",
-  "brand": "Mobilix",
-  "price": 1000,
+  "brand": "CloudyStyle",
+  "price": 1500,
+  "l":2000,
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
   "discount":7,
-  "name": "Mens 3-Piece Plaid Suit",
-  "description": "Mens 3-Piece Plaid Suit Set Modern Fit Jacket Tux Blazer Vest Pants Light Green",
+  "name": "Mens 3-Piece Plaid Cloudstyle Suit",
+  "description": "The plaid suits from Cloudstyle are made of comfy materials, you can enjoy total comfort while staying in style. Two main colors available - blue and black, different from other formal suits, make you look special and gentleman. Unique plaid design, easy matching and suitable for many occasions.Let you be the star in the party .You can wear it despite the alternation of four seasons.",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 14,
   "__v": 0
 }
 ,{
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15da13ee520d44421ed8e9e"
   },
   "image": "https://gh.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/44/976811/1.jpg?0883",
   "alt":"https://gh.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/44/976811/4.jpg?1099",
   "color":"https://gh.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/44/976811/2.jpg?0883",
-  "brand": "Mobilix",
-  "price": 1000,
+  "brand": "aHaBiKas",
+  "price": 150,
   "rating": 5,
-  "numReviews": null,
+  "l":200,
   "isFeatured": true,
   "discount":2,
-  "name": "Men's Design Stretch Jeans (black)",
-  "description": "Big Sofa for living room",
+  "description": " Men’s ripped jeans uses fashionable high-street style design,ever-changing decoration of holes breaks the dull feeling of the same color from top to bottom,make you look more handsome, to be the coolest guy when walking on the street.Slim fit jeans for men uses three-needle seams increase durability;ripped holes design,uses sturdy buttons and zipper,nice cutting in good version style,blue washing process,showing unique and fashionable style.",
+  "name": "Men’s ripped fashionable jeans",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 3,
   "__v": 0
 }
 ,{
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15da13e520d434421ed8e9e"
   },
   "image": "https://images-na.ssl-images-amazon.com/images/I/51zI-7m2xiS.__AC_SX342_SY445_QL70_FMwebp_.jpg",
   "color":"https://m.media-amazon.com/images/I/51NaTmrzwqS._AC_UY500_.jpg",
   "alt":"https://images-na.ssl-images-amazon.com/images/I/51kZUIozZGS.__AC_SX342_SY445_QL70_FMwebp_.jpg",
-  "brand": "Mobilix",
-  "price": 1000,
-  "rating": 5,
+  "brand": "YMDUCH",
+  "price": 90,
+  "rating": 4,
+  "l":"1000",
   "numReviews": null,
   "isFeatured": true,
   "discount":11,
   "name": "YMDUCH Women's SexyDress",
-  "description": "YMDUCH Women's Sexy Bodycon Party Dresses Spaghetti Strap Ruched Mini Club Dress",
+  "description": "Features - Open Back, Adjustable Spaghetti Straps, Sheer Mesh Ruched Design, Back Hidden Zipper Closure, Fully Lined, Padded Cup with Underwire.Match - Can be layered under cardigans, shawls, or jacket. Accessory with jewelry, clutch, and High Heels.  Occasions - Fit for Night out, Nightclub, holiday shopping, Dating, beach, party, Wedding guest, Candlelit Dinner, Valentine's Day Bachelorette Party. Memorial Day, Honeymoon.Perfectly Worn as Sexy and daily outfit",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
-  "countInStock": 2,
+  "countInStock": 20,
   "__v": 0
 }
 ,{
   "_id": {
-    "$oid": "5f15da13e520d44421ed8e9e"
+    "$oid": "5f15da13e520d4442r1ed8e9e"
   },
   "image": "https://m.media-amazon.com/images/I/711vVsuLVzL._AC_UX522_.jpg",
   "color":"https://m.media-amazon.com/images/I/71gI0HfNKjL._AC_UX425_.jpg",
   "brand": "Fuvinx",
   "price": 40,
   "rating": 3,
+  "l":70,
   "numReviews": null,
   "isFeatured": true,
   "discount":40,
@@ -324,13 +341,14 @@
   "image": "https://images-na.ssl-images-amazon.com/images/I/91nZ5TE9whL.__AC_SY445_SX342_QL70_FMwebp_.jpg",
   "color":"https://m.media-amazon.com/images/I/91sj7LGZifL._AC_UX466_.jpg",
   "alt":"https://m.media-amazon.com/images/I/61oVp97WDhL._AC_UX466_.jpg",
-  "brand": "Mobilix",
+  "brand": "Difon polo",
   "price": 80,
   "rating": 4,
+  "l":90,
   "numReviews": null,
   "isFeatured": true,
   "discount":8,
-  "name": "Essentials Men's Regular-fit Quick-Dry Golf Polo Shirt",
+  "name": "Essentials Men's Regular-fit  Polo Shirt",
   "description": "Essentials Men's Regular-fit Quick-Dry Golf Polo Shirt",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
@@ -344,6 +362,7 @@
   },
   "image": "https://m.media-amazon.com/images/I/81meS+hzUIL._AC_UY500_.jpg",
   "color":"https://m.media-amazon.com/images/I/81aHhNSuJHL._AC_SY500._SX._UX._SY._UY_.jpg",
+  "alt":"https://m.media-amazon.com/images/I/81Lt2HWkQ4L._AC_UY500_.jpg",
 
 
   "brand": "Fuvin",
@@ -352,9 +371,10 @@
   "numReviews": null,
   "isFeatured": true,
   "discount":15,
+  "l":300,
   "name": "Essentials Women's Jean",
 
-  "description": "Essentials Women's Mid Rise Curvy Skinny Jean",
+  "description": "Essentials is focused on creating affordable, high-quality, and long-lasting everyday clothing you can rely on. Our line of women's apparel includes cashmere sweaters, fleece and down jackets, and more, including plus-size options. Our consistent sizing takes the guesswork out of shopping, and each piece is put to the test to maintain the highest standards in quality and comfort",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
@@ -367,14 +387,17 @@
   },
   "image": "https://m.media-amazon.com/images/I/71IRHLTOnlL._AC_UX385_.jpg",
   "color":"https://m.media-amazon.com/images/I/51e9qKFXPSL._AC_UX522_.jpg",
-  "brand": "Mobilix",
-  "price": 1000,
+  "alt":"https://images-na.ssl-images-amazon.com/images/I/71rLpFtI6cL.__AC_SX342_SY445_QL70_FMwebp_.jpg",
+  "brand": "Wrangler ",
+  "price": 70,
   "rating": 5,
+  "l":90,
   "numReviews": null,
   "isFeatured": true,
   "discount":5,
-  "name": "Wrangler Men's Long Sleeve Sport Western Snap Shirt",
-  "description": "Wrangler Men's Long Sleeve Sport Western Snap Shirt",
+  "delivery":"free delivery",
+  "name": "Wrangler Men's Long Sleeve  Snap Shirt",
+  "description": "Since 1947, Wrangler has maintained a relentless commitment to quality apparel built to fit your life. Wrangler fills your closet with authentic snap shirts, tees, jackets and authentic western denim that keep you comfortable in true western style. Our shirts feature iconic details such as pearl snaps, pointed yokes, ‘W’ stitching on the pockets, and spread collars. Jeans come in 100% heavyweight denim or with a bit of stretch",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0ee7"
   },
@@ -387,14 +410,18 @@
   },
   "image": "https://m.media-amazon.com/images/I/91vNaFnBJES._AC_UX522_.jpg",
   "color":"https://m.media-amazon.com/images/I/71khQ+XhhqS._AC_UX522_.jpg",
-  "brand": "Mobilix",
-  "price": 60,
+  "alt":"https://m.media-amazon.com/images/I/81hmOMclBVL._AC_UX522_.jpg",
+  "brand": "fashion XPL",
+  "price": 40,
   "rating": 5,
-  "numReviews": null,
+  
+   "numReviews": null,
   "isFeatured": true,
   "discount":10,
+
+  "l":50,
   "name": "Men's Hawaiian Shirt Short Sleeves",
-  "description": "Men's Hawaiian Shirt Short Sleeves Printed Button Down Summer Beach Dress Shirts",
+  "description": "Cooling Tech: Soft & Coolness Fabric, helping Sweat Evaporates Faster.Garment Care: Machine Wash Cold, Tumble Dry Low ,Line dry，Do Not Bleach Men's Hawaiian Shirt for All Occasions: Perfect for Carnival Festival, Vacation,Summer Beach,Holiday, Hawaii Party, Break, Business and Casual ect.",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
@@ -407,14 +434,19 @@
   },
   "image": "https://m.media-amazon.com/images/I/A1z+LEOFyYL._AC_SX342_SY445_.jpg",
   "color":"https://m.media-amazon.com/images/I/91SnYjkm0GL._AC_UY500_.jpg",
-  "brand": "Mobilix",
+  "alt":"https://m.media-amazon.com/images/I/91AgITGtoML._AC_UY500_.jpg",
+  "brand": "POLO MEN",
   "price": 80,
   "rating": 5,
+  
+
   "numReviews": null,
   "isFeatured": true,
   "discount":13,
+  
+  "l":93,
   "name": "Men's Slim-Fit Long-Sleeve Plaid Shirt",
-  "description": "Goodthreads Men's Slim-Fit Long-Sleeve Plaid Oxford Shirt",
+  "description": "100% Cotton Imported No Closure closure Machine Wash This weekend-perfect casual button-front shirt in a midweight flannel features a soft feel and maximum comfort With a rounded hem, single-button barrel cuffs, a single chest pocket and straight back yoke with side pleats Slim fit: closer-fitting in the chest, slightly tapered through the waist for a tailored look",
   "category": {
     "$oid": "5f15d5b2cb4a6642bdc0fe7"
   },
@@ -433,7 +465,8 @@
   "discount":24,
   "numReviews": null,
   "isFeatured": true,
-  "name": "Gildan Men's G2000 Ultra Cotton Adult T-Shirt",
+  "delivery":"5%off delivery",
+  "name": "Gildan Men's Ultra Cotton Adult T-Shirt",
   "description": "Gildan Men's G2000 Ultra Cotton Adult T-Shirt",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
@@ -447,14 +480,19 @@
   },
   "image": "https://m.media-amazon.com/images/I/41R9bPX7+sL._SX395_SY395_.jpg",
   "color":"https://m.media-amazon.com/images/I/81M0v9K-aQL._UL1500_.jpg",
-  "brand": "Mobilix",
+  "alt":"https://images-na.ssl-images-amazon.com/images/I/81KtLrK5KHL.__AC_SY395_SX395_QL70_FMwebp_.jpg",
+  "brand": "Adidas",
   "price": 300,
   "rating": 5,
+
+  
+  "l":350,
   "discount":13,
   "numReviews": null,
   "isFeatured": true,
-  "name": "Adidas Men's Hoops 2.0 Mid Basketball Shoe",
-  "description": "Gildan Men's G2000 Ultra Cotton Adult T-Shirt",
+
+  "name": "Adidas Men's Basketball Shoe",
+  "description": "Rubber sole adidas mens Basketball Shoe The adidas brand has a long history and deep-rooted connection with sport. Everything we do is rooted in sport.",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },

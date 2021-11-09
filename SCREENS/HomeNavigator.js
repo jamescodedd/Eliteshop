@@ -3,7 +3,8 @@ import {createStackNavigator} from "@react-navigation/stack"
 
 import Product from "../PRODUCTS/Products"
 import ProductDetail from "../PRODUCTS/ProductDetail";
-const Stack=createStackNavigator()
+
+const Stack=createStackNavigator();
 
 
 const Mystack=()=>{
@@ -37,10 +38,14 @@ const Mystack=()=>{
 
 
 }
-export default function HomeNavigator(){
+
+const HomeNavigator=()=>{
     return(
         <Mystack/>
     )
 
 
 }
+
+  
+  export default HomeNavigator;

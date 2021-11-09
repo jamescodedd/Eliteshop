@@ -12,6 +12,8 @@ import {
   Dimensions,
   LogBox,
 } from "react-native";
+import { connect } from "react-redux";
+import * as actions from "../Redux/Actions/cartActions"
 
 
 
@@ -123,7 +125,12 @@ const Product = (props) => {
     </View>
   );
 };
-
+const mapDispatchToProps=(dispatch)=>{
+  return{
+    addItemToCart:(product)=>
+    dispatch(actions.addToCart({quantity:1,product}) )
+  }
+}
 const styles = StyleSheet.create({
   products: {
     alignItems: "center",
@@ -131,4 +138,4 @@ const styles = StyleSheet.create({
   },
   flatlist: {},
 });
-export default Product;
+export default connect(null,mapDispatchToProps)(Product);
