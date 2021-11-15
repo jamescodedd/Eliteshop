@@ -4,10 +4,14 @@ import {View,Text, ScrollView,SafeAreaView} from "react-native"
 import Icon from "react-native-vector-icons/FontAwesome";
 import { MaterialIcons } from "@expo/vector-icons";
 import HomeNavigator from "./HomeNavigator"
+import CartNavigator from "./CartNavigator";
+import UserNavigator from "./UserNavigator";
 const Bottomtab=createBottomTabNavigator();
-import CART from "./CART"
 
-import CartIcon from "./CartIcon";
+
+
+
+import CartIcon from "../Cart/CartIcon"
 
 
 const Navpage=()=>{
@@ -50,7 +54,7 @@ return(
   
   <Bottomtab.Screen
     name="Cart"
-    component={CART}
+    component={CartNavigator}
     options={{
       title:"Cart", 
     headerStyle:{backgroundColor:"black",
@@ -105,7 +109,7 @@ return(
   />
    <Bottomtab.Screen
     name="User"
-    component={HomeNavigator}
+    component={UserNavigator}
     options={{  title:"User", 
     headerStyle:{backgroundColor:"black",
     borderTopWidth:20,height:80,

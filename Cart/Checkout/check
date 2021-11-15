@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext} from 'react'
 import { Text, View, Button } from 'react-native'
-import { NativeBaseProvider,Select,VStack,CheckIcon, ScrollView} from 'native-base'
+import { NativeBaseProvider,Select,VStack,CheckIcon} from 'native-base'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import FormContainer from '../../Form/FormContainer'
 import Input from '../../Form/Input'
@@ -26,7 +26,7 @@ const Checkout = (props) => {
  
 
     useEffect(() => {
-        setOrderItems(props.CartItems)
+        setOrderItems(props.cartItems)
 
         
 
@@ -57,40 +57,40 @@ const Checkout = (props) => {
     }
 
     return (
-        <NativeBaseProvider><ScrollView>
-                <VStack alignItems="center" space={50}>
+        <KeyboardAwareScrollView
+            viewIsInsideTabBar={true}
+            extraHeight={200}
+            enableOnAndroid={true}
+        >
+            <FormContainer title={"Shipping Address"}>
+                <NativeBaseProvider>
+                    <VStack alignItems="center" space={4}>
       <Select
         selectedValue={Region}
-        minWidth="300"
-
+        minWidth="200"
         accessibilityLabel="Choose region"
         placeholder="Choose Region"
         _selectedItem={{
           bg: "teal.600",
           endIcon: <CheckIcon size="5" />,
         }}
-        mt={50}
+        mt={1}
         onValueChange={(r) => setregion(r)}
       >
        {
            Regions.map((r)=>{
                return(
-                    <Select.Item
+                   <Select.Item
                    value={r.name}
-                  label={r.name}
+                  
                    key={r.code}
-                
                    />
-          
                )
            })
        }
       </Select>
     </VStack>
-              
-      
-           
-             <FormContainer>
+                </NativeBaseProvider>
                 <Input
                     placeholder={"Phone"}
                     name={"phone"}
@@ -117,23 +117,16 @@ const Checkout = (props) => {
                     value={address2}
                     onChangeText={(text) => setAddress2(text)}
                 />
-                <View style={{marginTop:50}}>
-                    
-                
                   
-                </View>
                   
-                 
                   
               
-                <View style={{ width: '80%', alignItems: "center",backgroundColor:"gainsboro"  }}>
-                <Button  title="Confirm"  onPress={() => checkOut()}/>
+                <View style={{ width: '80%', alignItems: "center" }}>
+                <Button title="Confirm" onPress={() => checkOut()}/>
               
                   </View>
-                  </FormContainer>
-        
-            </ScrollView>
-            </NativeBaseProvider>
+            </FormContainer>
+        </KeyboardAwareScrollView>
     )
 }
 

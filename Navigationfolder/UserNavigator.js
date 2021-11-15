@@ -1,9 +1,9 @@
 import React from "react"
 import { createStackNavigator } from '@react-navigation/stack'
 
-import Login from '../Screens/User/Login'
-import Register from '../Screens/User/Register'
-import UserProfile from '../Screens/User/UserProfile'
+import Login from '../User/Login'
+import Register from '../User/Register'
+
 
 const Stack = createStackNavigator();
 
@@ -24,13 +24,7 @@ function MyStack() {
                     headerShown: false
                 }}
             />
-             <Stack.Screen 
-                name="User Profile"
-                component={UserProfile}
-                options={{
-                    headerShown: false
-                }}
-            />
+             
         </Stack.Navigator>
     )
 }

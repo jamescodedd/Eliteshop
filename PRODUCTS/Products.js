@@ -21,7 +21,7 @@ import * as actions from "../Redux/Actions/cartActions"
 
 import Categories from "../SCREENS/catergories";
 import Banner from "../SCREENS/Banner"
-import Search from "../SCREENS/Search";
+import Search from "../Search/Search";
 
 var { width } = Dimensions.get("window");
 const Data = require("../assets/Data.json");
