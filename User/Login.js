@@ -1,10 +1,10 @@
 import React, { useEffect, useContext, useState } from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet, Button ,TouchableOpacity,Dimensions} from "react-native";
 import FormContainer from "../Form/FormContainer";
 import Input from "../Form/Input";
 import Error from "./Error"
 import Toast from "react-native-toast-message";
-
+var width=Dimensions.get("window")
 
 
 
@@ -52,18 +52,22 @@ const Login = (props) => {
         value={password}
         onChangeText={(text) => setPassword(text)}
       />
-      <View style={styles.buttonGroup}>
+      <View >
       {error ? <Error message={error} /> : null}
-       
-        <Button title="Login" onPress={() => handleSubmit()}/>
+      <View style={{backgroundColor:"orange",width:325,height:40, alignItems:"center",marginTop:10, borderRadius:4}}>
+      <TouchableOpacity onPress={() => handleSubmit()}><Text style={{alignSelf:"center",top:8,fontWeight:"bold", }}>Login</Text></TouchableOpacity>
         
+      </View>
+
+       
+     
 
       </View>
-      <View style={[{ marginTop: 40 }, styles.buttonGroup]}>
-        <Text style={styles.middleText}>Don't have an account yet?</Text>
-        <Button title="Register"
-        onPress={() => props.navigation.navigate("Register")}
-         />
+      <Text style={styles.middleText}>Don't have an account yet?</Text>
+      <View style={{backgroundColor:"orange",width:325,height:40, alignItems:"center",marginTop:10, marginTop: 40 ,borderRadius:4}}>
+      <TouchableOpacity onPress={() => props.navigation.navigate("Register")}><Text style={{alignSelf:"center",top:8,fontWeight:"bold", }}>Sign up</Text></TouchableOpacity>
+        
+      
         
       </View>
     </FormContainer>
