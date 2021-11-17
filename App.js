@@ -21,10 +21,12 @@ LogBox.ignoreAllLogs(true);
 
 
 
+
 export default function App() {
     return (
     <Provider store={store}>
          <NavigationContainer>
+         
             <Navpage/>
             <Toast ref={(ref) => Toast.setRef(ref)} />
 

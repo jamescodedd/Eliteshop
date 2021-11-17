@@ -24,6 +24,7 @@ const ProductDetail = (props) => {
      
         
             <ScrollView style={{ padding: 5 }}>
+              <View style={{backgroundColor:"white"}}>
             
                 <View style={styles.container}>
                     <View style={styles.swiper}>
@@ -89,23 +90,23 @@ const ProductDetail = (props) => {
                 <ListItem.Subtitle
                 
                 style={{textShadowColor:'black'}}><Text style={{fontSize:20,fontWeight:"bold"}}>Product description: </Text> {item.description}</ListItem.Subtitle>
-                <ListItem.Title style={{fontSize:19,fontStyle:"bold"}}><Text style={{fontWeight:"bold", fontSize:23}}> Brand:</Text>
+                <ListItem.Title style={{fontSize:19,fontStyle:"bold"}}><Text style={{fontWeight:"bold", fontSize:20}}> Brand:</Text>
                   {item.brand}
                 </ListItem.Title>
-                <ListItem.Title style={{fontSize:19,fontStyle:"bold"}}><Text style={{fontWeight:"bold", fontSize:23}}>Products in Stock:</Text>{item.countInStock}</ListItem.Title>
+                <ListItem.Title style={{fontSize:19,fontStyle:"bold"}}><Text style={{fontWeight:"bold", fontSize:20}}>Products in Stock:</Text>{item.countInStock}</ListItem.Title>
 
                </ListItem.Content>
              
                 </ListItem>
                 <View style={{alignItems:"center", marginTop:20,marginBottom:32}}>
-                <TouchableOpacity style={{backgroundColor:"orange",width:width/2,height:width/8,alignItems:"center" ,justifyContent:"center"}}
+                <TouchableOpacity style={{backgroundColor:"orange",width:width-20,height:width/8,alignItems:"center" ,justifyContent:"center"}}
                 onPress={()=>
                   props.addItemToCart(item)}>
                    <Text>Add to Cat</Text> 
                 </TouchableOpacity>
                  
                 </View>
-                
+                </View>
           
 
                 

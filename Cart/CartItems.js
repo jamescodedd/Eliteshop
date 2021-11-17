@@ -8,14 +8,17 @@ return(
 
 
     <View style={{}}>
+          <View style={{marginBottom:10,backgroundColor:"gainsboro"}}>
     <TouchableOpacity>
+      
     <ListItem bottomDivider >
     <Avatar source={{uri:data.product.image}} />
 <ListItem.Content>
-<ListItem.Title style={{fontSize:13}}>{data.product.name}</ListItem.Title>
+<ListItem.Title style={{fontSize:13}}><Text style={{fontWeight:"bold"}}>{data.product.name}</Text></ListItem.Title>
 
 <ListItem.Subtitle style={{position:"absolute",alignSelf:"flex-end"}} >
-GHC {data.product.price}</ListItem.Subtitle>
+    <Text style={{fontWeight:'bold',color:"orange",fontWeight:"bold"}}>GHC {data.product.price}</Text>
+</ListItem.Subtitle>
 
 
 
@@ -24,8 +27,10 @@ GHC {data.product.price}</ListItem.Subtitle>
 
 
     </ListItem>
+ 
   
 </TouchableOpacity> 
+</View>
 
 </View>
 

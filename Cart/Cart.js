@@ -51,6 +51,7 @@ const CART =(props)=>{
            
            {props.cartItems.length ?
            (<ScrollView>
+             <View style={{backgroundColor:"white"}}>
                   <View style={{marginBottom:30}}>
          
                   <SwipeListView
@@ -64,7 +65,7 @@ const CART =(props)=>{
                 style={styles.hiddenButton}
                 onPress={() => props.removeFromCart(data.item)}
                 >
-                  <Icon name="trash" color={"white"} size={30} />
+                  <Icon name="trash" color={"orange"} size={30} />
                 </TouchableOpacity>
               </View>
             )}
@@ -78,20 +79,33 @@ const CART =(props)=>{
           />
             </View>
             <View style={{marginTop:30}}>
-                <Text style={{fontSize:20}}>Total Price</Text>
+                <Text style={{fontSize:20,fontWeight:"bold"}}>Total Price</Text>
                 <Text style={{alignSelf:"flex-end",
                  position:"absolute" ,
                  fontSize:"15",
-                  paddingRight:15, 
-                  textDecorationLine:"underline"}}>GHC {Total}</Text>
+                  paddingRight:15,color:"orange",fontWeight:"bold"
+              }}>GHC {Total}</Text>
+                     <View style={{width:width, backgroundColor:"black",height:1}}></View>
                   <View style={{alignSelf:"flex-start",
                   padding:5,
+                  marginTop:20,
                   marginBottom:12,
                    backgroundColor:"gainsboro"}}><Button title="Clear ALL" onPress={()=>props.clearCart()}/></View>
-<View style={{backgroundColor:"gainsboro", padding:23}}>
-  <Button
-title="Checkout" onPress={()=>navigation.navigate('Checkout')} />
+                
+<View style={{backgroundColor:"orange", padding:23, width:width-20, right:-10,top:90,borderRadius:5}}>
+ <TouchableOpacity onPress={()=>props.navigation.navigate('Checkout')}>
+   <Text style={{alignSelf:"center", fontWeight:"bold", color:"white", fontSize:16}}>Continue To Place Order</Text>
+
+ </TouchableOpacity>
 </View>
+<View style={{backgroundColor:"orange", padding:23, width:width-20, right:-10,top:100,marginBottom:200, borderRadius:5}}>
+ <TouchableOpacity onPress={()=>alert("Contact Number :0557471572")}>
+   <Text style={{alignSelf:"center", fontWeight:"bold", color:"white", fontSize:16}}>Call To Order</Text>
+
+ </TouchableOpacity>
+</View>
+
+            </View>
             </View>
 
 
@@ -132,7 +146,7 @@ const mapStateToProps = (state) => {
         flexDirection: 'row'
       },
       hiddenButton: {
-        backgroundColor: 'red',
+        backgroundColor: 'white',
         justifyContent: 'center',
         alignItems: 'flex-end',
         paddingRight: 25,
