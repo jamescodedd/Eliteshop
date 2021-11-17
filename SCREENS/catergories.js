@@ -19,7 +19,7 @@ const Categories = (props) => {
                 <TouchableOpacity
                     key={0}
                     onPress={() => {
-                        props.Caategories('ALL'), props.setact(-1)
+                        props.Categories('ALL'), props.setact(-1)
                     }}
                 ><NativeBaseProvider><Badge
                 style={[styles.center, {margin: 5},
@@ -34,7 +34,7 @@ const Categories = (props) => {
                       <TouchableOpacity
                       key={item._id}
                       onPress={() => {
-                          props.Caategories(item._id), 
+                          props.Categories(item._id), 
                           props.setact(props.cat.indexOf(item))
                       }}
                   ><NativeBaseProvider>
@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
     center: {
         justifyContent: 'center',
         alignItems: 'center',
-        height:50,
-        width:width/5.75
+        height:30,
+        width:width/5
     },
     active: {
         backgroundColor: '#03bafc'

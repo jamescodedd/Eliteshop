@@ -56,7 +56,7 @@ const Product = (props) => {
   //categories filter
   const changecat = (catt) => {
     {
-      cat === "ALL"
+      catt === "ALL"
         ? [getproduct(intial), setact(true)]
         : [
             getproduct(
@@ -81,7 +81,7 @@ const Product = (props) => {
        
        <Categories
    cat={cat}
-   Caategories={changecat}
+   Categories={changecat}
    productt={productt}
    active={active}
    setact={setact} />
