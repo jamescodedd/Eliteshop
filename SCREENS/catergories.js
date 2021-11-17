@@ -1,8 +1,8 @@
 import React from 'react'
-import { View ,StyleSheet, Text, TouchableOpacity,ScrollView } from 'react-native'
+import { View ,StyleSheet, Text, TouchableOpacity,ScrollView ,Dimensions} from 'react-native'
 import { Avatar, ListItem, makeStyles} from "react-native-elements"
 import { Badge,NativeBaseProvider} from "native-base"
-import { color } from 'react-native-elements/dist/helpers'
+var {width}=Dimensions.get("window")
 
 
 
@@ -19,14 +19,14 @@ const Categories = (props) => {
                 <TouchableOpacity
                     key={0}
                     onPress={() => {
-                        props.Categories('ALL'), props.setact(-1)
+                        props.Caategories('ALL'), props.setact(-1)
                     }}
                 ><NativeBaseProvider><Badge
                 style={[styles.center, {margin: 5},
                     props.active == -1 ? styles.active : styles.inactive
                 ]}
             >
-                <Text style={{ color: 'white' }}>All</Text>
+                <Text style={{ color: 'white', fontWeight:"bold" }}>All</Text>
             </Badge></NativeBaseProvider>
                     
                 </TouchableOpacity>
@@ -34,7 +34,7 @@ const Categories = (props) => {
                       <TouchableOpacity
                       key={item._id}
                       onPress={() => {
-                          props.Categories(item._id), 
+                          props.Caategories(item._id), 
                           props.setact(props.cat.indexOf(item))
                       }}
                   ><NativeBaseProvider>
@@ -44,7 +44,7 @@ const Categories = (props) => {
                             props.active == props.cat.indexOf(item) ? styles.active : styles.inactive
                           ]}
                       >
-                          <Text style={{ color: 'white' }}>{item.name}</Text>
+                          <Text style={{ color: 'white' ,fontWeight:"bold" }}>{item.name}</Text>
                       </Badge>
                   </NativeBaseProvider>
                       
@@ -58,7 +58,9 @@ const Categories = (props) => {
 const styles = StyleSheet.create({
     center: {
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        height:50,
+        width:width/5.75
     },
     active: {
         backgroundColor: '#03bafc'

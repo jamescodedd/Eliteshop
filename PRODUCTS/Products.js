@@ -10,7 +10,7 @@ import {
   Image,
   Text,
   Dimensions,
-  LogBox,
+
 } from "react-native";
 import { connect } from "react-redux";
 import * as actions from "../Redux/Actions/cartActions"
@@ -25,11 +25,11 @@ import Search from "../Search/Search";
 
 var { width } = Dimensions.get("window");
 const Data = require("../assets/Data.json");
-import CatData from "../assets/094 categories.json";
+import CatData from "../assets/categoriesj.json";
 import Productlist from "./productlist"
 
 
-LogBox.ignoreAllLogs(true);
+
 
 const Product = (props) => {
   const [products, assign] = useState([]);
@@ -54,13 +54,13 @@ const Product = (props) => {
     };
   }, []);
   //categories filter
-  const changecat = (cat) => {
+  const changecat = (catt) => {
     {
       cat === "ALL"
         ? [getproduct(intial), setact(true)]
         : [
             getproduct(
-              products.filter((i) => i.category._id === cat),
+              products.filter((i) => i.category._id === catt),
               setact(true)
             ),
           ];
@@ -81,7 +81,7 @@ const Product = (props) => {
        
        <Categories
    cat={cat}
-   Categories={changecat}
+   Caategories={changecat}
    productt={productt}
    active={active}
    setact={setact} />
